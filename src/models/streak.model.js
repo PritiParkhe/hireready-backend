@@ -45,4 +45,4 @@ const StreakSchema = new mongoose.Schema(
 StreakSchema.index({ user_id: 1 });
 StreakSchema.index({ current_streak: -1 }); // For leaderboard
 
-export default model("Streak", StreakSchema);
+export const StreakModel = mongoose.model("Streak", StreakSchema);
